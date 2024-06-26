@@ -5,7 +5,7 @@
         try {
             const response = await fetch('https://dog.ceo/api/breeds/image/random/20'); 
             if (!response.ok) {
-                throw new Error('Что-то пошло не так' + response.statusText);
+                throw new Error('Что-то пошло не так');
             }
             const data = await response.json();
             if (data) {
